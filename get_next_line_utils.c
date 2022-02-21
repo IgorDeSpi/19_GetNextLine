@@ -6,7 +6,7 @@
 /*   By: ide-spir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 11:48:48 by ide-spir          #+#    #+#             */
-/*   Updated: 2022/02/21 14:48:32 by ide-spir         ###   ########.fr       */
+/*   Updated: 2022/02/21 14:55:08 by ide-spir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,9 @@ char	*ft_strjoin(char *backup, char *buffer)
 	}
 	if (!backup || !buffer)
 		return (NULL);
+	str = malloc(sizeof(char) * ((ft_strlen(backup) + ft_strlen(buffer)) + 1));
+	if (!str)
+		return (NULL);
 	i = -1;
 	j = 0;
 	if (backup)
@@ -96,7 +99,7 @@ char	*ft_get_line(char *backup)
 char	*ft_backup(char *backup)
 {
 	int		i;
-	int		j
+	int		j;
 	char	*str;
 
 	i = 0;
