@@ -6,7 +6,7 @@
 /*   By: ide-spir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 11:48:27 by ide-spir          #+#    #+#             */
-/*   Updated: 2022/02/21 14:28:42 by ide-spir         ###   ########.fr       */
+/*   Updated: 2022/02/25 14:07:11 by ide-spir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,3 +50,22 @@ char	*get_next_line(int fd)
 	backup = ft_backup(backup);
 	return (line);
 }
+
+/*
+#include <stdio.h>
+
+int	main()
+{
+	char	*str;
+
+	int fd = open("file", O_RDONLY);
+	while ((str = get_next_line(0)) != NULL)
+	{
+		if (!str)
+			printf("res = %s", str);
+			free(str);
+	}
+	str = get_next_line(fd);
+	return (0);
+}
+*/
