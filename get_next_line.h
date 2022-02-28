@@ -6,7 +6,7 @@
 /*   By: ide-spir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/21 11:49:04 by ide-spir          #+#    #+#             */
-/*   Updated: 2022/02/21 14:26:07 by ide-spir         ###   ########.fr       */
+/*   Updated: 2022/02/28 10:52:45 by ide-spir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000
+#  define BUFFER_SIZE 1024
 # endif
 
 # include <unistd.h>
